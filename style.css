@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Open24Display';
+    src: url('Open 24 Display St.ttf')  format('truetype')
+         
+  }
+#calculator{
+    border: solid rgb(66, 112, 197) 3px;
+    margin: 4px auto;
+    padding:10px;
+    border-radius: 20px;
+
+    width: 435px;
+    height:auto;
+
+    background-color: rgb(164, 179, 207);
+
+}
+#display {
+    border: solid 3px rgba(85, 110, 114, 0.39);
+    background: rgba(85, 110, 114, 0.39);
+    margin: 10px 10px 10px 10px;
+    border-radius: 15px;
+    padding: 2px;
+
+    font-family: Open24Display, 'Times New Roman';
+    
+}
+#result{
+    text-align: right;
+    margin:0;
+    font-size: 300%;
+    padding-right: 10px;
+    height:60px;
+}
+#inline{
+    text-align: left;
+    margin:0;
+    font-size: 200%;
+    padding-left: 10px;
+    height:40px;
+}
+button {
+    width: 70px;
+    height: 70px;
+    padding:0;
+    margin:5px;
+    font-size: 200%;
+    border-radius: 15px;
+    
+}
+#pow, #sq{
+    font-size: 180%;
+}
+#keypad1{
+    
+    width: 255px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 10px;
+}
+#keypad2{
+    
+    width: 170px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-right: 10px;
+}
+#input {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px auto 10px auto;
+}
