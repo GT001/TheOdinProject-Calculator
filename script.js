@@ -32,7 +32,7 @@ function display_key(key){
     }
     
     if( c ){
-        //clear 
+        //clear  
         inline_numbers = [];
         inline_ops = [];
         result.textContent="0";
@@ -95,7 +95,7 @@ function display_key(key){
         }
     } else if (equal) {
         if(inline_ops[inline_ops.length - 1] != "^0.5" && (inline_ops[inline_ops.length - 1] != "/")){
-            inline_numbers.push((result.textContent.indexOf(".") < 0 ? parseFloat(result.textContent) : parseInt(result.textContent)));
+						inline_numbers.push((result.textContent.indexOf(".") > 0 ? parseFloat(result.textContent) : parseInt(result.textContent)));
             inline.textContent += result.textContent;
             result.textContent = process_arrays();
         } else if((inline_ops[inline_ops.length - 1] == "/" && result.textContent != "0" )){
